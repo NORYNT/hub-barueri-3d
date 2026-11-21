@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.1",
+    "pdfjs-dist": "^6.5.438",
+    "playwright": "^1.65.1",
+    "three": "^0.187.0",
+    "vite": "^8.3.8"
+  },
+  "name": "hub-barueri-3d",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "vite build"
+  }
+}

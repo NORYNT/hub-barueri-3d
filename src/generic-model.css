@@ -1,0 +1,36 @@
+.generic-model-page{position:fixed;inset:0;background:#eae7dd;color:#22271f}
+.generic-model-page #generic-scene{position:absolute;inset:0}
+.generic-model-page canvas{width:100%;height:100%;touch-action:none}
+.generic-model-head{position:absolute;z-index:3;top:22px;left:34px;display:flex;align-items:center;gap:16px}
+.generic-model-head .brand img{width:92px;height:auto}
+.generic-model-head .broker{padding:8px 10px;background:#f6f3e8cc;border:1px solid #bbc0b1;border-radius:6px}
+.generic-model-page header{position:absolute;z-index:3;top:92px;left:34px;background:#f6f3e8d9;border-left:3px solid #83956d;padding:13px 16px;max-width:280px}
+.generic-model-page header h1{font:normal 2.2rem Georgia,serif;margin:4px 0}
+.generic-model-page header p{margin:3px 0}
+.generic-model-nav{position:absolute;z-index:3;left:34px;bottom:28px;display:flex;gap:7px}
+.generic-model-page>.apartment-bar{position:absolute;z-index:3;right:34px;top:28px}
+.generic-model-page button,.generic-model-page>.apartment-bar a{border:1px solid #aeb4a5;border-radius:24px;background:#f9f8f2;color:#30372b;padding:.65rem 1rem}
+.generic-model-page>.apartment-bar .primary{background:#314132;color:white;border-color:#314132}
+.generic-hotspots{position:absolute;z-index:4;inset:0;pointer-events:none}
+.generic-environment-hotspot{position:absolute;pointer-events:auto;transform:translate(-50%,-50%);border-color:#ffffff99!important;background:#314132!important;color:white!important;box-shadow:0 3px 14px #252d2b55;white-space:nowrap}
+.generic-environment-hotspot[hidden]{display:none}
+.generic-hotspots--fallback{inset:auto 34px 28px auto;display:flex;flex-direction:column;align-items:flex-end;gap:7px;pointer-events:auto}
+.generic-hotspots--fallback .generic-environment-hotspot.static-action{position:static;transform:none}
+#generic-plan-dialog,#generic-environment-dialog{width:min(94vw,1200px);max-height:92vh;border:0;border-radius:12px;background:#f9f8f2}
+#generic-plan-dialog img,#generic-environment-dialog img{display:block;width:100%;max-height:76vh;object-fit:contain}
+#generic-environment-dialog .photo-caption{margin:-6px 0 10px;color:#596052;font-size:.82rem}
+.generic-fallback{position:absolute;width:min(78vw,900px);left:50%;top:50%;transform:translate(-50%,-50%);object-fit:contain;max-height:72vh}
+.generic-model-page .toolbar{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:700px){
+.generic-model-head{top:12px;left:12px}
+.generic-model-head .brand img{width:72px}
+.generic-model-head .broker{display:none}
+.generic-model-page header{top:68px;left:12px;max-width:230px;padding:8px 10px}
+.generic-model-page header h1{font-size:1.45rem}
+.generic-model-nav{left:12px;right:12px;bottom:18px;justify-content:center}
+.generic-model-nav button{font-size:.72rem;padding:.55rem .7rem}
+.generic-model-page>.apartment-bar{top:auto;bottom:72px;left:12px;right:12px;justify-content:center}
+.generic-model-page>.apartment-bar a{font-size:.72rem;min-height:36px;padding:.45rem .65rem}
+.generic-hotspots--fallback{inset:auto 12px 128px auto}
+#generic-environment-dialog .photo-caption{font-size:.72rem}
+}

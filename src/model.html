@@ -1,0 +1,15 @@
+<main>
+  <div id="scene" aria-label="Maquete interativa do apartamento"></div>
+  <header><span>HUB BARUERI</span><h1>Apartamento 76 m²</h1><p>Planta padrão · 3 dormitórios</p></header>
+  <button id="marker" class="room-marker" type="button" aria-label="Abrir a perspectiva do living">● &nbsp; Living</button>
+  <button id="bedroom-marker" class="room-marker" type="button" aria-label="Abrir a perspectiva do quarto" hidden>● &nbsp; Quarto</button>
+  <button id="kitchen-marker" class="room-marker" type="button" aria-label="Abrir a perspectiva da cozinha" hidden>● &nbsp; Cozinha</button>
+  <button id="balcony-marker" class="room-marker" type="button" aria-label="Abrir a perspectiva da sacada" hidden>● &nbsp; Sacada</button>
+  <nav aria-label="Controles da maquete"><button id="reset">Vista inicial</button><button id="top">Vista superior</button><button id="plan">Planta original</button></nav>
+  <footer>Arraste para girar · Use a roda ou a pinça para aproximar</footer>
+  <p id="status" role="status"></p>
+</main>
+<dialog id="gallery" aria-labelledby="image-title">
+  <div class="toolbar"><div><h2 id="image-title"></h2><p id="caption"></p></div><button id="back" autofocus>← Voltar à maquete</button></div>
+  <img id="official" alt="">
+</dialog>
